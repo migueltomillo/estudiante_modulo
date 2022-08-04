@@ -20,7 +20,7 @@ import { SliderModule } from 'primeng/slider';
 import { TableModule } from 'primeng/table';
 import { TabViewModule } from 'primeng/tabview';
 
-import { AnnexesComponent } from './project-form/annexes/annexes.component';
+import { BriefcaseComponent } from './project-form/briefcase/briefcase.component';
 import { AttachDocumentsComponent } from './project-form/attach-documents/attach-documents.component';
 import { SignaturesComponent } from './project-form/signatures/signatures.component';
 import { BibliographiesComponent } from './project-form/bibliographies/bibliographies.component';
@@ -32,7 +32,7 @@ import { SharedModule } from '@shared/shared.module';
 
 @NgModule({
   declarations: [
-    AnnexesComponent,
+    BriefcaseComponent,
     AttachDocumentsComponent,
     BibliographiesComponent,
     CertificateRequestsComponent,

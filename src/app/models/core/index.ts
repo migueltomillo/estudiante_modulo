@@ -1,4 +1,4 @@
-export * from './annexe.model';
+export * from './briefcase.model';
 export * from './career.model';
 export * from './catalogue.model';
 export * from './column.model';

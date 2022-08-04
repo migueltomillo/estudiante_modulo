@@ -1,14 +1,14 @@
 import { Component } from '@angular/core';
-import { AnnexeModel, ColumnModel } from '@models/core';
+import { BriefcaseModel, ColumnModel } from '@models/core';
 import { CoreService } from '@services/core';
 
 @Component({
-  selector: 'app-annexes',
-  templateUrl: './annexes.component.html',
-  styleUrls: ['./annexes.component.scss'],
+  selector: 'app-briefcase',
+  templateUrl: './briefcase.component.html',
+  styleUrls: ['./briefcase.component.scss'],
 })
-export class AnnexesComponent {
-  businessAnnexes: AnnexeModel[] = [
+export class BriefcaseComponent {
+  businessBriefcase: BriefcaseModel[] = [
     {
       id: 1,
       explanation: 'Carta de compromiso',
@@ -64,8 +64,8 @@ export class AnnexesComponent {
     { field: 'observation', header: 'Observaciones' },
   ];
   loaded$ = this.coreService.loaded$;
-  selectedBusinessAnnexes: any[] = [];
-  selectedInstitutionalAnnexes: any[] = [];
+  selectedBusinessBriefcase: any[] = [];
+  selectedInstitutionalBriefcase: any[] = [];
 
   constructor(private coreService: CoreService) {}
   download() {}
