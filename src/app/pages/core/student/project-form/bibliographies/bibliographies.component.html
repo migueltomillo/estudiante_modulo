@@ -1,1 +1,103 @@
-<p>bibliographies works!</p>
+<p-card header="PERFIL" style="text-align: center;">
+
+    <div class="perfil-usuario-header">
+      <div class="perfil-usuario-portada">
+        <div class="perfil-usuario-avatar">
+  
+          <img src="/assets/images/perfil.jpg" alt="Fotografia" width="180px" height="180px" style="top: -15px;" alt="..."
+            alt="User Profile">
+  
+          <button type="button" class="boton-avatar">
+            <a class="far fa-image" href="#modal"></a>
+          </button>
+        </div>
+  
+        <form id="modal" class="modal" action="/links/image-profile" method="POST" encType="multipart/form-data">
+          <div class="modal_container">
+            <div class="drag-area">
+              <h2 class="modal_title">Editar foto de
+                <span class="modal_title modal_title--bold"></span>
+              </h2>
+              <input type="file" name="sampleFile" accept="image/*" />
+              <input type="submit">
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div style="margin-left: 30%;" class="p-fluid grid">
+      <div class="field col-3 md:col-3" style="text-align: center;">
+        <span class="p-float-label">
+          <input type="text" id="inputtext" pInputText disabled="">
+          <label for="inputtext">NUMERO DE CEDULA</label>
+        </span>
+        <span class="p-float-label">
+          <input type="text" id="inputtext" pInputText disabled="">
+          <label for="inputtext">PARTICIPANTE</label>
+        </span>
+        <span class="p-float-label">
+          <input type="text" id="inputtext" pInputText disabled="">
+          <label for="inputtext">PROYECTO</label>
+        </span>
+        <span class="p-float-label">
+          <input type="text" id="inputtext" pInputText disabled="">
+          <label for="inputtext">NIVEL</label>
+        </span>
+        <span class="p-float-label">
+          <input type="text" id="inputtext" pInputText disabled="">
+          <label for="inputtext">HORARIO</label>
+        </span>
+        <span class="p-float-label">
+          <input type="text" id="inputtext" pInputText disabled="">
+          <label for="inputtext">FECHA DE ASIGNACION</label>
+        </span>
+        <span class="p-float-label">
+          <input type="text" id="inputtext" pInputText disabled="">
+          <label for="inputtext">ESTADO</label>
+        </span>
+        <span class="p-float-label">
+          <input type="text" id="inputtext" pInputText disabled="">
+          <label for="inputtext">TIPO DE PARTICIPANTE</label>
+        </span>
+      </div>
+  
+      <div class="field col-2 md:col-5">
+  
+  
+        <span class="p-float-label p-input-icon-left">
+          <input type="text" id="inputtext-left" pInputText disabled="">
+          <label for="inputtext">1727631747</label>
+        </span>
+  
+  
+        <span class="p-float-label p-input-icon-left">
+          <input type="text" id="inputtext-left" pInputText disabled="">
+          <label for="inputtext">BRAYAN ANIBAL ANDRADE ACERO</label>
+        </span>
+        <span class="p-float-label p-input-icon-left">
+          <input type="text" id="inputtext-left" pInputText disabled="">
+          <label for="inputtext">5° Semestre</label>
+        </span>
+        <span class="p-float-label p-input-icon-left">
+          <input type="text" id="inputtext-left" pInputText disabled="">
+          <label for="inputtext">Página Web Juvenil</label>
+        </span>
+        <span class="p-float-label p-input-icon-left">
+          <input type="text" id="inputtext-left" pInputText disabled="">
+          <label for="inputtext">15/02/2021-25/03/2021</label>
+        </span>
+        <span class="p-float-label p-input-icon-left">
+          <input type="text" id="inputtext-left" pInputText disabled="">
+          <label for="inputtext">15/02/2021</label>
+        </span>
+        <span class="p-float-label p-input-icon-left">
+          <input type="text" id="inputtext-left" pInputText disabled="">
+          <label for="inputtext">Activo</label>
+        </span>
+        <span class="p-float-label p-input-icon-left">
+          <input type="text" id="inputtext-left" pInputText disabled="">
+          <label for="inputtext">Estudiante</label>
+        </span>
+      </div>
+  
+    </div>
