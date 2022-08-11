@@ -36,6 +36,7 @@
           type="button"
           class="p-button-success p-button-rounded mr-2"
           icon="pi pi-download"
+          label="Descargar"
           (click)="download()"
           >
         </button>    
@@ -47,10 +48,10 @@
           type="button"
           class="p-button-warning p-button-rounded mr-2"
           icon="pi pi-cloud-upload
-          "
-
-          (onUpload)="onUpload()"
-          ></button>        </td>
+          "(onUpload)="onUpload()"
+          label="Adjuntar"
+          ></button>       
+         </td>
         <td *ngFor="let col of columns">
           <!--Objects-->
           <div *ngIf="rowData[col.field]?.id" [ngSwitch]="col.field">

@@ -13,14 +13,13 @@ export class TopbarComponent implements OnInit {
   ngOnInit() {
     this.items = [
       {
-        label: 'Bryan Andrade (Estudiante)',
-        routerLink: 'core/projects',
+        label: 'Brayan Andrade (Estudiante) ',
         icon: 'pi pi-user',
-        items: [{ label: 'logout', routerLink: 'core/projects' }],
+        items: [{ label: 'logout', routerLink: 'auth/login' }],
       },
       {
-        label: 'Informacion',
-        routerLink: 'core/projects',
+        label: 'Informacion del estudiante',
+        routerLink: 'core/students',
         icon: 'pi pi-book',
       },
     ];
