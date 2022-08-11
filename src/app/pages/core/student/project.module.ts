@@ -23,7 +23,7 @@ import { TabViewModule } from 'primeng/tabview';
 import { BriefcaseComponent } from './project-form/briefcase/briefcase.component';
 import { AttachDocumentsComponent } from './project-form/attach-documents/attach-documents.component';
 import { SignaturesComponent } from './project-form/signatures/signatures.component';
-import { BibliographiesComponent } from './project-form/bibliographies/bibliographies.component';
+import { ProfileComponent } from './project-form/profile/profile.component';
 import { CertificateRequestsComponent } from './project-form/certificate-requests/certificate-requests.component';
 import { ProjectListComponent } from './project-list/project-list.component';
 import { ProjectComponent } from './project.component';
@@ -34,7 +34,7 @@ import { SharedModule } from '@shared/shared.module';
   declarations: [
     BriefcaseComponent,
     AttachDocumentsComponent,
-    BibliographiesComponent,
+    ProfileComponent,
     CertificateRequestsComponent,
     ProjectListComponent,
     ProjectComponent,
