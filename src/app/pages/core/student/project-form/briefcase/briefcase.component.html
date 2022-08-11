@@ -7,24 +7,14 @@
  
   >
     <ng-template pTemplate="caption">
-      <span class="p-input-icon-left">
-        <i class="pi pi-search"></i>      
-      <button
-        pButton
-        type="button"
-        class="p-button-success p-button-rounded mr-2"
-        icon="pi pi-file"
-        pTooltip="Descargar documentacion"
-        label="Descargar documentacion"
-        (click)="download()"
-      ></button>
-      </span>
+      
     </ng-template>
     <ng-template pTemplate="header">
       <tr>
-        <th style="width: 1rem">
-<h4>Sube tus documentos</h4>        </th>
-        <th *ngFor="let col of columns">
+        
+        <th scope="" >
+<h4>Descarga o Sube tu documentacion</h4>        </th>
+        <th *ngFor="let col of columns" scope="">
           {{ col.header }}
           <p-sortIcon [field]="col.field"></p-sortIcon>
           <p-columnFilter
@@ -44,11 +34,22 @@
           url="./upload.php"
           accept="image/*"
           type="button"
+          class="p-button-success p-button-rounded mr-2"
+          icon="pi pi-download"
+          (click)="download()"
+          >
+        </button>    
+          
+          <button
+          pButton
+          url="./upload.php"
+          accept="image/*"
+          type="button"
           class="p-button-warning p-button-rounded mr-2"
           icon="pi pi-cloud-upload
           "
 
-          (onUpload)="onUpload($event)"
+          (onUpload)="onUpload()"
           ></button>        </td>
         <td *ngFor="let col of columns">
           <!--Objects-->

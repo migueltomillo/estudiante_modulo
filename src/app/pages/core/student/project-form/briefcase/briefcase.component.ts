@@ -12,45 +12,39 @@ export class BriefcaseComponent {
     {
       id: 1,
       explanation: 'Carta de compromiso',
-      documentStatus:'Subido',
-      state: 'desaprobado',
-      observation:'Icono de observaciones',
+      documentStatus:'Pendiente',
+      observation:'Observaciones',
     },
     {
       id: 2,
       explanation: 'Informe del proyecto',
-      documentStatus:'Subido',
-      state: 'Aprobado',
-      observation:'Icono de observaciones',
+      documentStatus:'Pendiente',
+      observation:'Observaciones',
     },
     {
       id: 3,
       explanation: 'Cumplimiento de objetivos',
-      documentStatus:'Subido',
-      state: 'Aprobado',
-      observation:'Icono de observaciones',
+      documentStatus:'Pendiente',
+      observation:'Observaciones',
 
     },
     {
       id: 4,
       explanation: 'Informe final',
-      documentStatus:'Subido',
-      state: 'Aprobado',
-      observation:'Icono de observaciones',
+      documentStatus:'Pendiente',
+      observation:'Observaciones',
     },
     {
       id: 5,
       explanation: 'Encuesta de percepcion',
-      documentStatus:'Subido',
-      state: 'Aprobado',
-      observation:'Icono de observaciones',
+      documentStatus:'Pendiente',
+      observation:'Observaciones',
     },
     {
       id: 6,
       explanation: 'Control de asistencias',
-      documentStatus:'Subido',
-      state: 'Aprobado',
-      observation:'Icono de observaciones',
+      documentStatus:'Pendiente',
+      observation:'Observaciones',
 
     },
    
@@ -60,16 +54,21 @@ export class BriefcaseComponent {
   columns: ColumnModel[] = [
     { field: 'explanation', header: 'Tienes que subir este archivo' },
     { field: 'documentStatus', header: 'Estado del documento' },
-    { field: 'state', header: 'Estado' },
     { field: 'observation', header: 'Observaciones' },
   ];
   loaded$ = this.coreService.loaded$;
   selectedBusinessBriefcase: any[] = [];
   selectedInstitutionalBriefcase: any[] = [];
+  selector: boolean = false;
 
   constructor(private coreService: CoreService) {}
-  download() {}
-  onUpload(e: any) {}
+  download() {
+    this.selector = true;
+
+  }
+  onUpload(){
+    this.selector = true;
+  }
 
  
 }
