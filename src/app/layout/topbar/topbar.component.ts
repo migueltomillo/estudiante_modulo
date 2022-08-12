@@ -22,6 +22,11 @@ export class TopbarComponent implements OnInit {
         routerLink: 'core/students',
         icon: 'pi pi-book',
       },
+      {
+        label: 'Perfil del estudiante',
+        routerLink: 'core/student',
+        icon: 'pi pi-book',
+      },
     ];
   }
 }
